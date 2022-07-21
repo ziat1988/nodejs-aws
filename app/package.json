@@ -1,0 +1,24 @@
+{
+  "name": "app-node-aws",
+  "version": "1.0.0",
+  "description": "nodejs and docker deploy to aws beanstalk",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "DangTrinh",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.10",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
