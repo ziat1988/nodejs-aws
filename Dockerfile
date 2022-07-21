@@ -10,5 +10,5 @@ COPY ./app /app
 
 EXPOSE 8000
 
-CMD ["npm","run","watch"]
+CMD ["node","server.js"]
 
