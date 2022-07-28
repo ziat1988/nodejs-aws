@@ -1,0 +1,14 @@
+
+{
+    "AWSEBDockerrunVersion": "2",
+    "containerDefinitions": [
+      {
+        "name": "nodeapp",
+        "image": "ziat1988/node-aws:latest",
+        "hostname": "api",
+        "essential": false,
+        "memory": 128
+      }
+     
+    ]
+  }
