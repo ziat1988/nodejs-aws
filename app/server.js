@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello from express docker");
+  res.send("This is some text from Beanstalk!!!");
 });
 
 app.get("/home", (req, res) => {
