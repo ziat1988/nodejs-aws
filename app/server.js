@@ -23,6 +23,11 @@ app.get("/home", (req, res) => {
 
 const PORT = process.env.PORT || 8000;
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+async function startServer() {
+  await mongoConnect();
+  app.listen(PORT, function () {
+    console.log(`Listening on port ${PORT}`);
+  });
+}
+
+startServer();
