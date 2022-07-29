@@ -1,10 +1,12 @@
 const express = require("express");
+const { cp } = require("fs/promises");
 const path = require("path");
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("This is some text from Beanstalk!!!");
+  console.log(process.env);
+  res.send("This is some text22");
 });
 
 app.get("/home", (req, res) => {
