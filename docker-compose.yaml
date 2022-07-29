@@ -10,3 +10,13 @@ services:
     volumes:
       - /app/node_modules
       - ./app:/app
+
+  nginx:
+    image: nginx
+    ports:
+     - "80:80"
+    volumes:
+     - ./proxy/conf.d:/etc/nginx/conf.d
+    depends_on:
+     - app
+    
