@@ -10,8 +10,7 @@ app.use(express.urlencoded()); // to support URL-encoded bodies
 app.use("/asset", express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
-  console.log(process.env);
-  res.send("This is some text22");
+  res.send(process.env); // spacing level = 2(process.env));
 });
 
 app.get("/home", (req, res) => {
@@ -24,7 +23,7 @@ app.get("/home", (req, res) => {
 const PORT = process.env.PORT || 8000;
 
 async function startServer() {
-  await mongoConnect();
+  // await mongoConnect();
   app.listen(PORT, function () {
     console.log(`Listening on port ${PORT}`);
   });
