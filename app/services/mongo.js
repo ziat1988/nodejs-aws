@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const dbConfig = require("./../config/db.config");
-const MONGO_URL = dbConfig.url;
+//const dbConfig = require("./../config/db.config");
+//const MONGO_URL = dbConfig.url;
 
 mongoose.connection.once("open", () => {
   console.log("MongoDB connection ready!");
@@ -11,7 +11,7 @@ mongoose.connection.on("error", (err) => {
 });
 
 async function mongoConnect() {
-  await mongoose.connect("mongodb://admin:password@mongodb:27017/my-test?authSource=admin");
+  await mongoose.connect("mongodb://admin22:password22@mongodb:27017/my-test?authSource=admin");
 }
 
 async function mongoDisconnect() {
