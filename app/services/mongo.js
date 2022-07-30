@@ -11,7 +11,7 @@ mongoose.connection.on("error", (err) => {
 });
 
 async function mongoConnect() {
-  await mongoose.connect("mongodb://admin22:password22@mongodb:27017/my-test?authSource=admin");
+  await mongoose.connect("mongodb://admin:password@http://dockernodeapp-env.eba-js4t7d5t.eu-west-3.elasticbeanstalk.com:27017/my-test?authSource=admin");
 }
 
 async function mongoDisconnect() {
