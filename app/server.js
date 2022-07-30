@@ -52,7 +52,7 @@ const PORT = process.env.PORT || 8000;
 async function startServer() {
   await mongoConnect();
   app.listen(PORT, function () {
-    logger.info(`server run in port ${PORT}`);
+    console.log(`server run in port ${PORT}`);
   });
 }
 
