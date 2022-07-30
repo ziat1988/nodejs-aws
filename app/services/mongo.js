@@ -11,7 +11,7 @@ mongoose.connection.on("error", (err) => {
 });
 
 async function mongoConnect() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect("mongodb://admin:password@mongodb:27017/my-test?authSource=admin");
 }
 
 async function mongoDisconnect() {
